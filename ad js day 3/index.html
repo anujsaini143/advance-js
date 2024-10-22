@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        function convertToTitleCase(inp){
+            // const name="Anuj"
+        const x=inp.toLowerCase().split("");//split convert to string sa array ma//
+        x.splice(0,1); //is am do item ha index,count// //remove the 0th indexed data
+       const y= x.join(""); //vapas array sa string ma convert krna//
+        const final=inp[0].toUpperCase()+y;
+        return final;
+        }
+        
+        // const x=name.toLowerCase()
+        // console.log(x[0].toUpperCase());
+        // console.log(x.split("")); //string to arrow ma convert split
+        
+        // console.log(x);
+        
+        const names=[
+            "anuj","bhagirath","chinu","deepak","efort"
+        ]
+        
+         const newnames=names.map(
+            function(d,i){
+                 return convertToTitleCase(d)
+            }
+         )
+        console.log(newnames);
+        
+    </script>
+ </body>
+ </html>

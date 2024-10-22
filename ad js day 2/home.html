@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button onclick="obj.getdata()">Click me</button>
+    <script>
+        // var a=10;
+        // console.log(a);
+        // var a=50;
+        // console.log(a);
+        
+        // let b=20;
+        // console.log(b);
+        
+        // const c=30;
+        // console.log(c);
+
+        // var a=10;
+        // a=10;
+        // console.log(a);
+        // let b=20;
+        // b=20;
+        // console.log(b);
+        // const c=30;
+        // c=30;
+        // console.log(c);
+
+        // for(const i=1; i<=10;i++){
+        //     console.log(i);
+        // }
+
+        // console.log(a);
+        // var a=10;
+        // greet();
+        // function greet(){
+        //     console.log("Hiii");
+            
+        // }
+        
+        const obj={
+            uname:"anuj saini",
+            uemail:"anujsaini@gmail.com",
+            getdata:function(){
+                console.log(this);
+                
+                window.setTimeout(
+                    function (){
+                        console.log(this);                     
+                    },2000
+                )
+               window. setTimeout(
+                 () => {
+                console.log(this);
+                
+                
+            },3000)
+        }}
+         
+        
+
+        
+        
+
+        
+        
+        
+        
+    </script>
+ </body>
+ </html>

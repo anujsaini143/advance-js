@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="obj.getData()">Click me</button>
+    <script>
+        //redeclare hona//
+        //   var a=10;
+        //   console.log(a);
+        //   var a=40;
+        //   console.log(a);
+        //   let b=20;
+        //   console.log(b);
+        //   const c=30;
+        //   console.log(c); // redeclare hona
+
+
+        // reassign hona//
+        // var a = 10
+        // a = 20;
+        // console.log(a);
+
+        // let b=40;
+        // b=50;
+        // console.log(b);
+
+        // const c=80;
+        // c=90;
+        // console.log(c); //reassign hona
+
+        // scope hona//
+        // for(var i=1;i<=10;i++){
+        // }
+        // console.log(i); //var ek global variable ha ya sabhe jagho pr work kr sakhta ha//
+
+        // for(let i=1;i<=10;i++){
+        //     console.log(i); // let humasa ek block hota ha ya khud  ka refrence ma he work krta ha//
+        // }
+
+        // for(const i=1;i<=10;i++){
+        //     console.log(i);    //const humasa ek name sa ek bar he declare hota ha us ka bad ya kisi dusra ko nhi leta ha 
+        // }
+
+        // var global and let or const block//
+        // {
+        //     var a=10;
+        //     let b=20;
+        //     const c=30
+        // }
+        // console.log(a);
+        // console.log(b);
+        // console.log(c); //var kha pr b work krsakhta ha lakin let or const humasa apna refrence ma he work krta ha//
+
+
+
+        // hosting hona only var or funaction he work krsakhta ha baki let or const nhi kr sakhta ha //
+        //to access the variable and funactions before declaring it//
+        //  console.log(a);
+        //  var a=10; // hosting (to access the variable before declaring it)//
+
+        //  greet();
+
+        //  function greet(){
+        //     console.log("hiii");
+        //  } 
+        //  var a=10; // hosting (to access the funaction before declaring it)//
+        // hosting ya sirf var or funaction ka sath ma he ho sakhta ha //
+
+
+        //arrow funaction//
+
+        // const greet = () => {
+            // console.log("hiii");
+        // }
+
+        // const demo= function(){
+        //     console.log("hello");
+        // }
+        // greet();
+        // demo();
+
+        const obj = {
+            uname: "Anuj Saini",
+            uemail: "anujsainibrand@gmail.com",
+            getData: function () {
+                console.log(this);
+                window.setTimeout(
+                    function () {
+                        console.log(this);
+                    },
+                    2000
+                )
+                window.setTimeout(
+                    ()=>{
+                        console.log(this);   
+                    },3000
+                )
+            }
+        }
+
+        const add=(a,b) => a+b;
+        // {
+            // if(isNaN(a)||isNaN(b)){
+            //     return "please enter only number"
+            // }
+            // else{
+            //     return a+b;
+            // }
+        // };
+        console.log(add(2,5));
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

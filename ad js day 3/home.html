@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      // const name="bhaigirath";
+      function convertToTitleCase(name){
+         const x=name.toLowerCase().split("");
+      x.splice(0,1);
+      const y=x.join("");
+      const final=name[0].toUpperCase()+y;
+      return final;
+      }
+      const names=[
+         "anuj","deepak","himanshu","glolu","dinesh"
+      ];
+      const newnames=names.map(
+         function(d,i){
+      return convertToTitleCase(d);
+         }
+      )
+      console.log(newnames);
+      
+   </script>
+</body>
+</html>

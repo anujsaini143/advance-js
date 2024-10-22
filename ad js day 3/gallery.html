@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const names = [
+            "Alice", "Bob", "Charlie", "David", "Emily", "Frank", "Grace", "Hannah", "Ian", "Jack",
+            "Karen", "Leo", "Megan", "Nina", "Oliver", "Paul", "Quincy", "Rachel", "Steve", "Tina",
+            "Uma", "Victor", "Wendy", "Xander", "Yvonne", "Zach", "Bella", "Chris", "Diana", "Ethan", "deepak"
+        ];
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+        const final = names.filter(
+            (n) => {
+                if (vowels.includes(n[0].toLowerCase()) == true) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            }
+        )
+        console.log(final);
+
+        // const arr1=['a','b','c','d','e'];
+        // const arr2=arr1; //deep copy//
+        // const arr2=[...arr1]; //shallow copy//
+        // arr2.push("f")
+        // console.log(arr1);
+        // console.log(arr2);
+    </script>
+</body>
+
+</html>
